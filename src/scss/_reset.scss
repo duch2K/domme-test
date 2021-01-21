@@ -8,14 +8,10 @@
   font-family: 'Inter', sans-serif;
 }
 
-a,
-span,
-p,
-b,
-h1,
-h2,
-h3,
-h4,
-h5 {
+a, span, p, b, h1, h2, h3, h4, h5 {
   color: $black;
+}
+
+img {
+  display: block;
 }

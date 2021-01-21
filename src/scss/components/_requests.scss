@@ -1,0 +1,113 @@
+.requests {
+  width: 100%;
+  padding-right: 30px;
+
+  &__sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0 24px 4px;
+    border-bottom: 1px solid $lightGrey;
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-left: 24px;
+        padding: 5px 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 13px 18px 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 8px;
+    background-color: $purple;
+    color: $white;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0 24px 28px;
+    border-bottom: 1px solid $lightGrey;
+  }
+
+  &__search {
+    width: 33%;
+    border: 1px solid $lightGrey;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+
+    button {
+      border: none;
+      background: transparent;
+    }
+
+    input {
+      margin-left: 15px;
+      display: block;
+      border: none;
+    }
+  }
+
+  &__controls {
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-switch {
+      display: flex;
+
+      span {
+        margin-right: 16px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      div {
+        width: 32px;
+        height: 18px;
+        padding: 2px;
+        background-color: $lightGrey;
+        border-radius: 4px;
+        span {
+          display: block;
+          width: 11px;
+          height: 14px;
+          border-radius: 3px;
+          background-color: $white;
+        }
+      }
+    }
+
+    &-btn {
+      width: 145px;
+      padding: 12px 12px 12px 16px;
+      border: 1px solid $lightGrey;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  &__table {
+    padding: 30px;
+  }
+}

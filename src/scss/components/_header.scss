@@ -1,0 +1,77 @@
+.header {
+  height: 80px;
+  display: flex;
+  border-bottom: 1px solid $lightGrey;
+
+  &__logo {
+    min-width: $sidebarWidth;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    border-right: 1px solid $lightGrey;
+
+    img {
+      margin-right: 14px;
+    }
+    span {
+      font-weight: 700;
+      font-size: 17px;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__house {
+    display: flex;
+    align-items: center;
+
+    &-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      background-color: #5B6CFF12;
+    }
+
+    &-name {
+      h2 {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      span {
+        font-size: 12px;
+        line-height: 15px;
+        color: $grey;
+      }
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+
+    &-notifications {
+      margin-right: 24px;
+    }
+    &-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

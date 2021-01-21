@@ -1,0 +1,44 @@
+.requests-table {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+
+
+  thead {
+    background-color: $lightGrey;
+
+    th {
+      padding: 12px 0 13px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: $grey;
+      text-align: left;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $lightGrey;
+      
+      td {
+        text-align: left;
+        padding: 23px 0 22px;
+        padding-right: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      td:first-child {
+        display: flex;
+        // justify-content: center;
+        padding-right: 14px;
+        padding-left: 14px;
+
+        img {
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+}

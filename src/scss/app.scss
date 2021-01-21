@@ -1,3 +1,15 @@
 @import 'fonts';
 @import 'variables';
 @import 'reset';
+
+// Components
+@import './components/header';
+@import './components/sidebar';
+@import './components/requests-table';
+
+// Pages
+@import './components/requests';
+
+.wrapper {
+  display: flex;
+}

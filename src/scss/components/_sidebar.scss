@@ -1,0 +1,34 @@
+.sidebar {
+  min-width: $sidebarWidth;
+  padding-top: 23px;
+  border-right: 1px solid $lightGrey;
+
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      padding: 6px 0 6px 30px;
+      margin-bottom: 10px;
+      position: relative;
+
+      img {
+        margin-right: 10px;
+      }
+      span {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.01em;
+        color: $grey;
+      }
+      div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: $purple;
+      }
+    }
+  }
+}
