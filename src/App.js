@@ -1,5 +1,8 @@
+import { Switch, Route } from 'react-router-dom';
+
 import { Header, Sidebar } from './components';
 import { Requests } from './pages';
+
 import './scss/app.scss';
 
 function App() {
@@ -9,7 +12,10 @@ function App() {
 
       <div className="wrapper">
         <Sidebar />
-        <Requests />
+
+        <Switch>
+          <Requests />
+        </Switch>
       </div>
     </div>
   );
