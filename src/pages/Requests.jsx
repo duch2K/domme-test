@@ -18,7 +18,7 @@ function Requests() {
           <li>Отклоненные</li>
         </ul>
 
-        <div className="requests__btn">Создать заявку</div>
+        <div className="requests__btn btn">Создать заявку</div>
       </div>
 
       <div className="requests__filter">

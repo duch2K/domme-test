@@ -1,0 +1,47 @@
+.calendar {
+  width: 100%;
+  padding: 0 28px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 34px 0;
+
+    &-month {
+      display: flex;
+      align-items: center;
+      margin-right: 83px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+
+      div {
+        margin: 0 40px;
+      }
+    }
+
+    &-sum {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 130%;
+      color: $trnsBlack;
+    }
+
+    &-switch {
+      margin-left: 112px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: $trnsBlack;
+
+      span:first-child {
+        margin-right: 24px;
+        color: $black
+      }
+    }
+
+    &-btn {
+      margin-left: auto;
+    }
+  }
+}

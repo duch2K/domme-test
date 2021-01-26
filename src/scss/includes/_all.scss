@@ -1,0 +1,19 @@
+.btn {
+  padding: 13px 18px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 8px;
+  background-color: $purple;
+  color: $white;
+}
+
+// Components
+@import './header';
+@import './sidebar';
+@import './requests-table';
+@import './calendar-grid';
+
+// Pages
+@import './requests';
+@import './calendar';

@@ -1,0 +1,13 @@
+.calendar-grid {
+  border: .5px solid $lightGrey;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    border: .5px solid $lightGrey;
+    width: 14.285714%;
+    height: 135px;
+  }
+}

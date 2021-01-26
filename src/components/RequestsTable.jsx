@@ -19,20 +19,22 @@ function RequestsTable() {
       </thead>
 
       <tbody>
-        <tr>
-          <td>
-            <img src={alertIcon} alt="alert"/>
-            <img src={mailIcon} alt="mail"/>
-          </td>
-          <td>1234</td>
-          <td>Квартира</td>
-          <td>В ожидании</td>
-          <td>Жалоба</td>
-          <td>Открыть</td>
-          <td>Медет Сисенгалиев</td>
-          <td>03.10.20 в 18:00</td>
-          <td>03.10.20 в 18:00</td>
-        </tr>
+        {[...Array(8)].map((e, i) => (
+          <tr>
+            <td>
+              <img src={alertIcon} alt="alert"/>
+              <img src={mailIcon} alt="mail"/>
+            </td>
+            <td>123{i}</td>
+            <td>Квартира</td>
+            <td>В ожидании</td>
+            <td>Жалоба</td>
+            <td>Открыть</td>
+            <td>Медет Сисенгалиев</td>
+            <td>03.10.20 в 18:00</td>
+            <td>03.10.20 в 18:00</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );

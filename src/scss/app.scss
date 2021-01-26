@@ -2,13 +2,8 @@
 @import 'variables';
 @import 'reset';
 
-// Components
-@import './components/header';
-@import './components/sidebar';
-@import './components/requests-table';
+@import './includes/all';
 
-// Pages
-@import './components/requests';
 
 .wrapper {
   display: flex;
