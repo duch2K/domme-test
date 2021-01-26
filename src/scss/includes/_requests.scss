@@ -15,10 +15,26 @@
 
       li {
         margin-left: 24px;
-        padding: 5px 0;
+        padding: 10px 0;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
+        position: relative;
+        color: $trnsBlack;
+        cursor: pointer;
+
+        &.active {
+          color: $black;
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 16px;
+            background-color: $purple;
+          }
+        }
       }
     }
   }

@@ -1,7 +1,22 @@
 import alertIcon from '../img/alert-circle.svg';
 import mailIcon from '../img/mail.svg';
 
-function RequestsTable() {
+const requests = [
+  {
+    id: 1, 
+    location: '',
+    status: '',
+    type: '',
+    description: '',
+    performer: '',
+    requestDate: '',
+    endDate: '',
+    important: true,
+    new: true
+  }
+];
+
+function RequestsTable({ sort }) {
   return (
     <table className="requests-table" border="0" cellSpacing="0">
       <thead>
@@ -20,10 +35,12 @@ function RequestsTable() {
 
       <tbody>
         {[...Array(8)].map((e, i) => (
-          <tr>
+          <tr key={i}>
             <td>
-              <img src={alertIcon} alt="alert"/>
-              <img src={mailIcon} alt="mail"/>
+              <div>
+                <img src={alertIcon} alt="alert"/>
+                <img src={mailIcon} alt="mail"/>
+              </div>
             </td>
             <td>123{i}</td>
             <td>Квартира</td>

@@ -18,9 +18,9 @@ function App() {
           <Route path="/" component={Requests} exact />
           <Route path="/requests" component={Requests} exact />
           <Route path="/calendar" component={Calendar} />
-          {/* <Route path="/news" component={Requests} exact />
-          <Route path="/finance" component={Requests} exact />
-          <Route path="/checkmate" component={Requests} exact /> */}
+          {/* <Route path="/news" component={News} exact />
+          <Route path="/finance" component={Finance} exact />
+          <Route path="/checkmate" component={Checkmate} exact /> */}
         </Switch>
       </div>
     </div>

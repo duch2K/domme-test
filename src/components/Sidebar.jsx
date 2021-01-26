@@ -38,9 +38,7 @@ const pages = [
 ];
 
 function Sidebar() {
-  const [activePage, setActivePage] = React.useState('');
-
-  const ref = React.useRef(null);
+  const [activePage, setActivePage] = React.useState('requests');
 
   const onLinkClick = (title) => {
     setActivePage(title);
@@ -50,11 +48,10 @@ function Sidebar() {
     <nav className="sidebar">
       <ul>
         {pages.map(({id, name, title, icon, activeIcon}) => (
-          <Link to={`/${title}`}>
-            <li key={id} ref={ref} className={activePage === title ? 'active' : ''}
+          <Link to={`/${title}`} key={id}>
+            <li className={activePage === title ? 'active' : ''}
               onClick={() => onLinkClick(title)}
             >
-              {/* <div></div> */}
               <img src={activePage === title ? activeIcon : icon} alt={title}/>
               <span>{name}</span>
             </li>

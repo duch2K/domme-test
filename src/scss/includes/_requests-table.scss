@@ -24,17 +24,17 @@
       td {
         text-align: left;
         padding: 23px 0 22px;
-        padding-right: 40px;
+        padding-right: 30px;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
       }
       td:first-child {
-        display: flex;
-        // justify-content: center;
         padding-right: 14px;
         padding-left: 14px;
-
+        div {
+          display: flex;
+        }
         img {
           margin: 0 4px;
         }

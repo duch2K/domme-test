@@ -1,6 +1,6 @@
 .sidebar {
   min-width: $sidebarWidth;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   padding-top: 23px;
   border-right: 1px solid $lightGrey;
 
