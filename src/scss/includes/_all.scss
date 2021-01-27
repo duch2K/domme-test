@@ -6,13 +6,15 @@
   border-radius: 8px;
   background-color: $purple;
   color: $white;
+  cursor: pointer;
 }
 
 // Components
 @import './header';
 @import './sidebar';
 @import './requests-table';
-@import './calendar-grid';
+@import './calendar-grid-month';
+@import './calendar-grid-year';
 
 // Pages
 @import './requests';

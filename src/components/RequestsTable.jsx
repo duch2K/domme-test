@@ -4,7 +4,7 @@ import mailIcon from '../img/mail.svg';
 
 import requests from './requestsData';
 
-function RequestsTable({ sort }) {
+function RequestsTable({ filter }) {
   return (
     <table className="requests-table" border="0" cellSpacing="0">
       <thead>

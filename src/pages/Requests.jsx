@@ -17,19 +17,15 @@ const sortTypes = [
 ];
 
 function Requests() {
-  const [sort, setSort] = React.useState('all')
-
-  const onSortClick = (title) => {
-    setSort(title);
-  };
+  const [filter, setFilter] = React.useState('all')
 
   return (
     <main className="requests">
       <div className="requests__sort">
         <ul>
           {sortTypes.map(({id, name, title, count}) => (
-            <li key={id} className={sort === title ? 'active' : ''}
-              onClick={() => onSortClick(title)}
+            <li key={id} className={filter === title ? 'active' : ''}
+              onClick={() => setFilter(title)}
             >
               {name} {count ? `(${count})` : ''}
             </li>
@@ -62,7 +58,7 @@ function Requests() {
       </div>
 
       <div className="requests__table">
-        <RequestsTable sort={sort} />
+        <RequestsTable filter={filter} />
       </div>
     </main>
   );

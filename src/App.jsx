@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 
 import { Header, Sidebar } from './components';
-import { Calendar, Requests } from './pages';
+import { Calendar, Checkmate, Finance, Requests } from './pages';
 
 import './scss/app.scss';
 
@@ -18,6 +18,8 @@ function App() {
           <Route path="/" component={Requests} exact />
           <Route path="/requests" component={Requests} />
           <Route path="/calendar" component={Calendar} />
+          <Route path="/checkmate" component={Checkmate} />
+          <Route path="/finance" component={Finance} />
         </Switch>
       </div>
     </div>

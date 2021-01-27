@@ -7,7 +7,7 @@
     align-items: center;
     padding: 34px 0;
 
-    &-month {
+    &-month-year {
       display: flex;
       align-items: center;
       margin-right: 83px;
@@ -16,6 +16,8 @@
       line-height: 22px;
 
       div {
+        min-width: 135px;
+        text-align: center;
         margin: 0 40px;
       }
     }
