@@ -3,7 +3,6 @@
   border-radius: 8px;
   overflow: hidden;
 
-
   thead {
     background-color: $lightGrey;
 
@@ -28,6 +27,10 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
+
+        &:nth-child(6) {
+          padding-right: 50px;
+        }
 
         &:first-child {
           padding-right: 14px;

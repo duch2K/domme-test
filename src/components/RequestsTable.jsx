@@ -27,8 +27,13 @@ function RequestsTable({ sort }) {
           const date1 = new Date(requestDate * 1000),
             date2 = new Date(endDate * 1000);
 
-          const dateFormat1 = `${date1.getDate()}.${date1.getMonth()}.${date1.getFullYear()} в ${date1.getHours()}:${date1.getMinutes()}`,
-            dateFormat2 = `${date2.getDate()}.${date2.getMonth()}.${date2.getFullYear()} в ${date2.getHours()}:${date2.getMinutes()}`;
+          const dateForm1 = `${String('0' + date1.getDate()).slice(-2)}.` +
+                `${String('0' + date1.getMonth() + 1).slice(-2)}.${date1.getFullYear()} в ` +
+                `${String('0' + date1.getHours()).slice(-2)}:${String('0' + date1.getMinutes()).slice(-2)}`;
+
+          const dateForm2 = `${String('0' + date2.getDate()).slice(-2)}.` +
+                `${String('0' + date2.getMonth() + 1).slice(-2)}.${date2.getFullYear()} в ` +
+                `${String('0' + date2.getHours()).slice(-2)}:${String('0' + date2.getMinutes()).slice(-2)}`;
 
           return (
             <tr key={id}>
@@ -61,10 +66,10 @@ function RequestsTable({ sort }) {
                   </span>
               </td>
               <td>
-                <span>{requestDate ? dateFormat1 : '--/--'}</span>
+                <span>{requestDate ? dateForm1 : '--/--'}</span>
               </td>
               <td>
-                <span>{endDate ? dateFormat2 : '--/--'}</span>
+                <span>{endDate ? dateForm2 : '--/--'}</span>
               </td>
             </tr>
           );
