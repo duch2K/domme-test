@@ -9,5 +9,23 @@
     border: .5px solid $lightGrey;
     width: 14.285714%;
     height: 135px;
+    position: relative;
+
+    &-num {
+      width: 24px;
+      height: 24px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: $trnsBlack;
+      border-radius: 50%;
+      background-color: $lightGrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
   }
 }

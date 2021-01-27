@@ -62,7 +62,7 @@ function Requests() {
       </div>
 
       <div className="requests__table">
-        <RequestsTable />
+        <RequestsTable sort={sort} />
       </div>
     </main>
   );

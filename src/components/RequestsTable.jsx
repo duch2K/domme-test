@@ -1,20 +1,8 @@
 import alertIcon from '../img/alert-circle.svg';
+import alertIconP from '../img/alert-circle-purple.svg';
 import mailIcon from '../img/mail.svg';
 
-const requests = [
-  {
-    id: 1, 
-    location: '',
-    status: '',
-    type: '',
-    description: '',
-    performer: '',
-    requestDate: '',
-    endDate: '',
-    important: true,
-    new: true
-  }
-];
+import requests from './requestsData';
 
 function RequestsTable({ sort }) {
   return (
@@ -34,24 +22,53 @@ function RequestsTable({ sort }) {
       </thead>
 
       <tbody>
-        {[...Array(8)].map((e, i) => (
-          <tr key={i}>
-            <td>
-              <div>
-                <img src={alertIcon} alt="alert"/>
-                <img src={mailIcon} alt="mail"/>
-              </div>
-            </td>
-            <td>123{i}</td>
-            <td>Квартира</td>
-            <td>В ожидании</td>
-            <td>Жалоба</td>
-            <td>Открыть</td>
-            <td>Медет Сисенгалиев</td>
-            <td>03.10.20 в 18:00</td>
-            <td>03.10.20 в 18:00</td>
-          </tr>
-        ))}
+        {requests.map(({ id, location, status, type, performer, requestDate, endDate, important, isNew }) => {
+
+          const date1 = new Date(requestDate * 1000),
+            date2 = new Date(endDate * 1000);
+
+          const dateFormat1 = `${date1.getDate()}.${date1.getMonth()}.${date1.getFullYear()} в ${date1.getHours()}:${date1.getMinutes()}`,
+            dateFormat2 = `${date2.getDate()}.${date2.getMonth()}.${date2.getFullYear()} в ${date2.getHours()}:${date2.getMinutes()}`;
+
+          return (
+            <tr key={id}>
+              <td>
+                <div>
+                  <img src={important ? alertIconP : alertIcon} alt="alert"/>
+                  <div className={isNew ? 'new-mail' : ''}>
+                    <img src={mailIcon} alt="mail"/>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <span>{id}</span>
+              </td>
+              <td>
+                <span>{location}</span>
+              </td>
+              <td>
+                <span className={`status ${status[1]}`}>{status[0]}</span>
+              </td>
+              <td>
+                <span>{type}</span>
+              </td>
+              <td>
+                <span className="descr">Открыть</span>
+              </td>
+              <td>
+                <span className={`performer ${!performer && 'appoint'}`}>
+                  {performer ? performer : 'Назначить'}
+                  </span>
+              </td>
+              <td>
+                <span>{requestDate ? dateFormat1 : '--/--'}</span>
+              </td>
+              <td>
+                <span>{endDate ? dateFormat2 : '--/--'}</span>
+              </td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );

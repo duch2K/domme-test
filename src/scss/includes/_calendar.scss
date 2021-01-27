@@ -34,9 +34,28 @@
       line-height: 17px;
       color: $trnsBlack;
 
-      span:first-child {
-        margin-right: 24px;
-        color: $black
+      span {
+        padding: 5px 0;
+        color: $trnsBlack;
+        position: relative;
+        cursor: pointer;
+        
+        &:first-child {
+          margin-right: 24px;
+        }
+        &.active {
+          color: $black;
+          &::before {
+            content: '';
+            border-radius: 18px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 16px;
+            background-color: $purple;
+          }
+        }
       }
     }
 

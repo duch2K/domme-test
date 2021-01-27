@@ -15,7 +15,7 @@ function Calendar() {
         <div className="calendar__header-sum">Сумма за месяц: 400.000тг</div>
 
         <div className="calendar__header-switch">
-          <span>Месяц</span>
+          <span className="active">Месяц</span>
           <span>Год</span>
         </div>
 

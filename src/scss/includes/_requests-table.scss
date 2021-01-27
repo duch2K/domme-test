@@ -28,15 +28,97 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
-      }
-      td:first-child {
-        padding-right: 14px;
-        padding-left: 14px;
-        div {
-          display: flex;
+
+        &:first-child {
+          padding-right: 14px;
+          padding-left: 14px;
+          div {
+            display: flex;
+          }
+          img {
+            margin: 0 4px;
+          }
         }
-        img {
-          margin: 0 4px;
+
+        .new-mail {
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border: 2px solid $white;
+            border-radius: 50%;
+            background-color: $purple;
+            position: absolute;
+            top: -2px;
+            right: 0;
+          }
+        }
+
+        span {
+          padding-bottom: 3px;
+
+          &.performer {
+            &.appoint {
+              color: $purple;
+              cursor: pointer
+            }
+          }
+
+          &.status, &.descr {
+            cursor: pointer;
+            border-bottom: 1px dashed $trnsBlack;
+          }
+
+          &.status {
+            position: relative;
+            margin-left: 11px;
+
+            &::before {
+              content: '';
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              position: absolute;
+              left: -10px;
+              top: 50%;
+              transform: translateY(-60%);
+            }
+            &.awaiting {
+              color: $grey;
+              border-bottom-color: $lightGrey;
+              &::before {
+                background-color: $lightGrey;
+              }
+            }
+            &.process {
+              color: $purple;
+              border-bottom-color: $trnsPurple;
+              &::before {
+                background-color: $trnsPurple;
+              }
+            }
+            &.solved {
+              color: $green;
+              border-bottom-color: $trnsGreen;
+              &::before {
+                background-color: $trnsGreen;
+              }
+            }
+            &.expired {
+              color: $red;
+              border-bottom-color: $trnsRed;
+              &::before {
+                background-color: $trnsRed;
+              }
+            }
+            &.rejected {
+              &::before {
+                background-color: $trnsBlack;
+              }
+            }
+          }
         }
       }
     }
