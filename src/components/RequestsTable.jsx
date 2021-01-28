@@ -4,7 +4,21 @@ import mailIcon from '../img/mail.svg';
 
 import requests from './requestsData';
 
-function RequestsTable() {
+function RequestsTable({ filter }) {
+  let data;
+  if (filter !== 'all') {
+    data = requests.filter((e) => {
+      if (filter === 'isNew' || filter === 'important') {
+        if (filter === 'isNew') 
+          return e.isNew;
+        else 
+          return e.important;
+
+      } else 
+        return e.status[1] === filter;
+    });
+  } else data = requests;
+
   return (
     <table className="requests-table" border="0" cellSpacing="0">
       <thead>
@@ -22,7 +36,7 @@ function RequestsTable() {
       </thead>
 
       <tbody>
-        { requests.map(({ id, location, status, type, performer, requestDate, endDate, important, isNew }) => {
+        { data.map(({ id, location, status, type, performer, requestDate, endDate, important, isNew }) => {
 
           const date1 = new Date(requestDate * 1000),
             date2 = new Date(endDate * 1000);

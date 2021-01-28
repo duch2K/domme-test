@@ -8,6 +8,11 @@
   color: $white;
   cursor: pointer;
 }
+.btn--light {
+  color: $purple;
+  background-color: transparent;
+  border: 1px dashed $purple;
+}
 
 .filter {
   display: flex;

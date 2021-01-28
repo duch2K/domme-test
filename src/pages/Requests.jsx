@@ -6,18 +6,18 @@ import searchIcon from '../img/search.svg';
 import slidersIcon from '../img/sliders.svg';
 
 const filters = [ 
-  { id: 1, name: 'Все', title: 'all', count: 84 }, 
-  { id: 2, name: 'Новые', title: 'new', count: 32 },
-  { id: 3, name: 'Важные', title: 'important', count: 24 },
-  { id: 4, name: 'В ожидании', title: 'awaiting', count: 0 },
-  { id: 5, name: 'В процессе', title: 'inProcess', count: 15 },
-  { id: 6, name: 'Просроченно', title: 'expired', count: 43 },
-  { id: 7, name: 'Решенные', title: 'solved', count: 23 },
-  { id: 8, name: 'Отклоненные', title: 'rejected', count: 0 }
+  { id: 1, name: 'Все', title: 'all' }, 
+  { id: 2, name: 'Новые', title: 'isNew' },
+  { id: 3, name: 'Важные', title: 'important' },
+  { id: 4, name: 'В ожидании', title: 'awaiting' },
+  { id: 5, name: 'В процессе', title: 'process' },
+  { id: 6, name: 'Просроченно', title: 'expired' },
+  { id: 7, name: 'Решенные', title: 'solved' },
+  { id: 8, name: 'Отклоненные', title: 'rejected' }
 ];
 
 function Requests() {
-  const [filter, setFilter] = React.useState('all')
+  const [filter, setFilter] = React.useState('all');
 
   return (
     <main className="requests">
@@ -58,7 +58,7 @@ function Requests() {
       </div>
 
       <div className="requests__table">
-        <RequestsTable />
+        <RequestsTable filter={filter} />
       </div>
     </main>
   );
