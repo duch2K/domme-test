@@ -1,6 +1,7 @@
 .requests-table {
   width: 100%;
   border-radius: 8px;
+  border: 1px solid $lightGrey;
   overflow: hidden;
 
   thead {
@@ -18,15 +19,14 @@
 
   tbody {
     tr {
-      border-bottom: 1px solid $lightGrey;
-      
       td {
         text-align: left;
         padding: 23px 0 22px;
-        padding-right: 25px;
+        padding-right: 30px;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
+        border-bottom: 1px solid $lightGrey;
 
         &:nth-child(6) {
           padding-right: 50px;

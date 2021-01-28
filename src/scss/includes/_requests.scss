@@ -1,10 +1,9 @@
 .requests {
   width: 100%;
-  padding-right: 30px;
   padding-bottom: 40px;
 
   &__header {
-    padding: 24px 0 24px 4px;
+    padding: 24px 30px 24px 4px;
     border-bottom: 1px solid $lightGrey;
   }
 
@@ -12,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0 24px 28px;
+    padding: 24px 30px 24px 28px;
     border-bottom: 1px solid $lightGrey;
   }
 
@@ -84,6 +83,5 @@
 
   &__table {
     padding: 30px;
-    padding-right: 0;
   }
 }
