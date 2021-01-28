@@ -5,7 +5,7 @@ import { RequestsTable } from '../components';
 import searchIcon from '../img/search.svg';
 import slidersIcon from '../img/sliders.svg';
 
-const sortTypes = [ 
+const filters = [ 
   { id: 1, name: 'Все', title: 'all', count: 84 }, 
   { id: 2, name: 'Новые', title: 'new', count: 32 },
   { id: 3, name: 'Важные', title: 'important', count: 24 },
@@ -21,9 +21,9 @@ function Requests() {
 
   return (
     <main className="requests">
-      <div className="requests__sort">
+      <div className="requests__header filter">
         <ul>
-          { sortTypes.map(({id, name, title, count}) => (
+          { filters.map(({id, name, title, count}) => (
             <li key={id} className={filter === title ? 'active' : ''}
               onClick={() => setFilter(title)}
             >
@@ -35,7 +35,7 @@ function Requests() {
         <div className="requests__btn btn">Создать заявку</div>
       </div>
 
-      <div className="requests__filter">
+      <div className="requests__subheader">
         <div className="requests__search">
           <button>
             <img src={searchIcon} alt="search"/>

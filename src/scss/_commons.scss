@@ -1,0 +1,46 @@
+.btn {
+  padding: 13px 18px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 8px;
+  background-color: $purple;
+  color: $white;
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-left: 24px;
+      padding: 5px 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      position: relative;
+      color: $trnsBlack;
+      cursor: pointer;
+
+      &.active {
+        color: $black;
+        &::before {
+          content: '';
+          border-radius: 18px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 16px;
+          background-color: $purple;
+        }
+      }
+    }
+  }
+}

@@ -3,45 +3,12 @@
   padding-right: 30px;
   padding-bottom: 40px;
 
-  &__sort {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &__header {
     padding: 24px 0 24px 4px;
     border-bottom: 1px solid $lightGrey;
-
-    ul {
-      display: flex;
-      align-items: center;
-
-      li {
-        margin-left: 24px;
-        padding: 5px 0;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-        position: relative;
-        color: $trnsBlack;
-        cursor: pointer;
-
-        &.active {
-          color: $black;
-          &::before {
-            content: '';
-            border-radius: 18px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 2px;
-            width: 16px;
-            background-color: $purple;
-          }
-        }
-      }
-    }
   }
 
-  &__filter {
+  &__subheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,5 +84,6 @@
 
   &__table {
     padding: 30px;
+    padding-right: 0;
   }
 }

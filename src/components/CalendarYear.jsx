@@ -6,9 +6,9 @@ const monthes = ['Январь', 'Февраль', 'Март',
 function CalendarYear() {
   return (
     <div className="calendar-year">
-      { monthes.map((item) => (
-        <div className="calendar-year__item">
-          <b>{item}</b>
+      { monthes.map((e, i) => (
+        <div className="calendar-year__item" key={i}>
+          <b>{e}</b>
           <span>30.333.321 T (3 события)</span>
         </div>
       ))}

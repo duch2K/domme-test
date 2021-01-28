@@ -1,0 +1,59 @@
+.checkmate {
+  width: 100%;
+
+  &__header {
+    padding: 24px 0 24px 4px;
+    border-bottom: 1px solid $lightGrey;
+  }
+
+  &__subheader {
+    border-bottom: 1px solid $lightGrey;
+    
+    ul {
+      padding: 28px 30px;
+      display: flex;
+      li {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        margin-right: 44px;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          left: -15px;
+          top: 50%;
+          transform: translateY(-55%);
+        }
+
+        &:first-child {
+          margin-left: 16px;
+          &::before {
+            background-color: $grey;
+          }
+        }
+        &:nth-child(2)::before {
+          background-color: $yellow;
+        }
+        &:nth-child(3)::before {
+          background-color: $red;
+        }
+        &:last-child {
+          margin-right: 0;
+          &::before {
+            background-color: $black;
+          }
+        }
+
+      }
+    }
+  }
+
+  &__main {
+
+  }
+}
