@@ -4,7 +4,7 @@ import mailIcon from '../img/mail.svg';
 
 import requests from './requestsData';
 
-function RequestsTable({ filter }) {
+function RequestsTable() {
   return (
     <table className="requests-table" border="0" cellSpacing="0">
       <thead>
@@ -61,9 +61,9 @@ function RequestsTable({ filter }) {
                 <span className="descr">Открыть</span>
               </td>
               <td>
-                <span className={`performer ${!performer && 'appoint'}`}>
+                <span className={`performer ${!performer ? 'appoint' : ''}`}>
                   {performer ? performer : 'Назначить'}
-                  </span>
+                </span>
               </td>
               <td>
                 <span>{requestDate ? dateForm1 : '--/--'}</span>

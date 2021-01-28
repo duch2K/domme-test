@@ -1,3 +1,29 @@
 .calendar-year {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  &__item {
+    margin: 15px;
+    border-radius: 8px;
+    background-color: #5B6CFF0A;
+    padding: 29px 30px;
+    flex:1 1 20%;
+
+    b {
+      display: block;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 6px;
+    }
   
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #7F8297;
+    }
+  }
 }

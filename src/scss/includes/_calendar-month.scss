@@ -20,7 +20,6 @@
         font-size: 12px;
         line-height: 124%;
         margin-bottom: 8px;
-        color: $lightGrey;
         display: block;
       }
       b {
@@ -37,6 +36,10 @@
       
       * {
         color: $white;
+      }
+      
+      span {
+        color: #FFFFFF99;
       }
 
       img {

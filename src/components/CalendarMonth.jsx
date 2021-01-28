@@ -2,19 +2,19 @@ import eventIcon from '../img/event-rect.svg';
 
 const events = [
   {
-    day: 4,
+    day: 7,
     name: 'Lorem ipsum dolor',
-    price: '200000',
-    color: 'yellow'
-  },
-  {
-    day: 12,
-    name: 'Lorem ipsum dolor set amet lorem dolor',
     price: '200000',
     color: 'purple'
   },
   {
-    day: 23,
+    day: 9,
+    name: 'Lorem ipsum dolor set amet lorem dolor',
+    price: '200000',
+    color: 'yellow'
+  },
+  {
+    day: 10,
     name: 'Lorem ipsum dolor',
     price: '200000',
     color: 'yellow'

@@ -27,8 +27,8 @@ function Calendar() {
         <div className="calendar__header-sum">Сумма за месяц: 400.000тг</div>
 
         <div className="calendar__header-switch" onClick={onFilterClick}>
-          <span className={grid && 'active'}>Месяц</span>
-          <span className={!grid && 'active'}>Год</span>
+          <span className={grid ? 'active' : ''}>Месяц</span>
+          <span className={!grid ? 'active' : ''}>Год</span>
         </div>
 
         <div className="calendar__header-btn btn">Добавить событие</div>

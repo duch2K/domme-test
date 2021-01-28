@@ -58,7 +58,7 @@ function Requests() {
       </div>
 
       <div className="requests__table">
-        <RequestsTable filter={filter} />
+        <RequestsTable />
       </div>
     </main>
   );
