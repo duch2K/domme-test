@@ -22,7 +22,7 @@ function RequestsTable({ filter }) {
       </thead>
 
       <tbody>
-        {requests.map(({ id, location, status, type, performer, requestDate, endDate, important, isNew }) => {
+        { requests.map(({ id, location, status, type, performer, requestDate, endDate, important, isNew }) => {
 
           const date1 = new Date(requestDate * 1000),
             date2 = new Date(endDate * 1000);

@@ -1,0 +1,84 @@
+.calendar-month {
+  border: .5px solid $lightGrey;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    border: .5px solid $lightGrey;
+    width: 14.285714%;
+    height: 135px;
+    position: relative;
+    padding: 0 20px 18px 20px;
+    display: flex;
+    align-items: flex-end;
+
+    &-descr {
+      span {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 124%;
+        margin-bottom: 8px;
+        color: $lightGrey;
+        display: block;
+      }
+      b {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 124%;
+        display: block;
+      }
+    }
+
+    &.event {
+      background-clip:padding-box;
+      position: relative;
+      
+      * {
+        color: $white;
+      }
+
+      img {
+        position: absolute;
+        bottom: 6px;
+        right: 7px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 4px;
+        top: 3px;
+        left: 4px;
+        right: 4px;
+        background: $white;
+        border-radius: 38px;
+      }
+
+      &--purple {
+        background-color: $purple;
+      }
+      &--yellow {
+        background-color: $yellow;
+      }
+    }
+
+    &-num {
+      width: 24px;
+      height: 24px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: $black;
+      border-radius: 50%;
+      background-color: $lightGrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+  }
+}

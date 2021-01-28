@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CalendarMonthGrid, CalendarYearGrid } from "../components";
+import { CalendarMonth, CalendarYear } from "../components";
 import prevIcon from '../img/prev.svg';
 import nextIcon from '../img/next.svg';
 
@@ -26,16 +26,16 @@ function Calendar() {
 
         <div className="calendar__header-sum">Сумма за месяц: 400.000тг</div>
 
-        <div className="calendar__header-switch">
-          <span className={grid && 'active'} onClick={onFilterClick}>Месяц</span>
-          <span className={!grid && 'active'} onClick={onFilterClick}>Год</span>
+        <div className="calendar__header-switch" onClick={onFilterClick}>
+          <span className={grid && 'active'}>Месяц</span>
+          <span className={!grid && 'active'}>Год</span>
         </div>
 
         <div className="calendar__header-btn btn">Добавить событие</div>
       </div>
       
-      <div className="calendar__grid-month">
-        {grid ? (<CalendarMonthGrid />) : (<CalendarYearGrid/>)}
+      <div className="calendar__grid">
+        {grid ? (<CalendarMonth />) : (<CalendarYear/>)}
       </div>
     </main>
   );

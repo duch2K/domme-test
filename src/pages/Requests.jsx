@@ -23,7 +23,7 @@ function Requests() {
     <main className="requests">
       <div className="requests__sort">
         <ul>
-          {sortTypes.map(({id, name, title, count}) => (
+          { sortTypes.map(({id, name, title, count}) => (
             <li key={id} className={filter === title ? 'active' : ''}
               onClick={() => setFilter(title)}
             >
