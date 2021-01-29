@@ -6,7 +6,9 @@
 @import './includes/all';
 
 
-.wrapper {
+.app {
   min-width: $appMinWidth;
+}
+.wrapper {
   display: flex; 
 }

@@ -1,0 +1,15 @@
+.flat-info {
+  width: 412px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 1px solid $lightGrey;
+  background-color: $white;
+  padding: 33px;
+
+  .hr {
+    height: 1px;
+    background-color: $lightGrey;
+  }
+}
