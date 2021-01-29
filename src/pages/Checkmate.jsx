@@ -33,42 +33,44 @@ function Checkmate() {
               <span>Общий долг: 324.000</span>
               <div className="checkmate__porchs-grid">
                 <table cellSpacing="12">
-                  <tr>
-                    <th>1 этаж</th>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td className="yellow">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>2 этаж</th>
-                    <td className="red">134</td>
-                    <td>134</td>
-                    <td className="black">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>3 этаж</th>
-                    <td>134</td>
-                    <td>134</td>
-                    <td className="purple">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>4 этаж</th>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>1 этаж</th>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td className="yellow">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>2 этаж</th>
+                      <td className="red">134</td>
+                      <td>134</td>
+                      <td className="black">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>3 этаж</th>
+                      <td>134</td>
+                      <td>134</td>
+                      <td className="purple">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>4 этаж</th>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -78,42 +80,44 @@ function Checkmate() {
               <span>Общий долг: 324.000</span>
               <div className="checkmate__porchs-grid">
                 <table cellSpacing="12">
-                  <tr>
-                    <th>1 этаж</th>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td className="yellow">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>2 этаж</th>
-                    <td className="red">134</td>
-                    <td>134</td>
-                    <td className="black">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>3 этаж</th>
-                    <td>134</td>
-                    <td>134</td>
-                    <td className="purple">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>4 этаж</th>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>1 этаж</th>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td className="yellow">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>2 этаж</th>
+                      <td className="red">134</td>
+                      <td>134</td>
+                      <td className="black">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>3 этаж</th>
+                      <td>134</td>
+                      <td>134</td>
+                      <td className="purple">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>4 этаж</th>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -130,42 +134,44 @@ function Checkmate() {
               <span>Общий долг: 324.000</span>
               <div className="checkmate__porchs-grid">
                 <table cellSpacing="12">
-                  <tr>
-                    <th>1 этаж</th>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td className="yellow">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>2 этаж</th>
-                    <td className="red">134</td>
-                    <td>134</td>
-                    <td className="black">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>3 этаж</th>
-                    <td>134</td>
-                    <td>134</td>
-                    <td className="purple">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>4 этаж</th>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>1 этаж</th>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td className="yellow">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>2 этаж</th>
+                      <td className="red">134</td>
+                      <td>134</td>
+                      <td className="black">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>3 этаж</th>
+                      <td>134</td>
+                      <td>134</td>
+                      <td className="purple">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>4 этаж</th>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -175,42 +181,44 @@ function Checkmate() {
               <span>Общий долг: 324.000</span>
               <div className="checkmate__porchs-grid">
                 <table cellSpacing="12">
-                  <tr>
-                    <th>1 этаж</th>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td className="yellow">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>2 этаж</th>
-                    <td className="red">134</td>
-                    <td>134</td>
-                    <td className="black">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>3 этаж</th>
-                    <td>134</td>
-                    <td>134</td>
-                    <td className="purple">134</td>
-                    <td>134</td>
-                    <td>134</td>
-                    <td>134</td>
-                  </tr>
-                  <tr>
-                    <th>4 этаж</th>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                    <td className="empty">134</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>1 этаж</th>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td className="yellow">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>2 этаж</th>
+                      <td className="red">134</td>
+                      <td>134</td>
+                      <td className="black">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>3 этаж</th>
+                      <td>134</td>
+                      <td>134</td>
+                      <td className="purple">134</td>
+                      <td>134</td>
+                      <td>134</td>
+                      <td>134</td>
+                    </tr>
+                    <tr>
+                      <th>4 этаж</th>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                      <td className="empty">134</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
