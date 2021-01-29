@@ -8,8 +8,28 @@
   background-color: $white;
   padding: 33px;
 
-  .hr {
-    height: 1px;
-    background-color: $lightGrey;
+  h2 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 130%;
+    margin-bottom: 14px;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      background: $veryTrnsPurple;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      border-radius: 4px;
+      padding: 5px 7px;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
